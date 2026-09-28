@@ -31,24 +31,129 @@
 
                 <section data-auto-animate>
                     <span class="menu-title" style="display: none">Overview</span>
-                    <h3 class="r-fit-text">A Real-Time Tsetlin Machine-based <span style="color: #007bff;">NILM System</span> on MCUs</h3>
-                    <p class="name" style="font-size: 20px;">Han Wu, Tianhang Tan, Shengyu Duan, Alex Yakovlev, Rishad Shafik and Tousif Rahman</p>
-                    <span style="color: #007bff;">Non-intrusive Load Monitoring System</span>
+                    <h3 class="r-fit-text">A Real-Time <span style="color: #777777;">TM-based</span> <span style="color: #007bff;">NILM System</span> on MCUs</h3>
+                    <div class="r-hstack">
+                        <img src="images/nilm.png" width="45%"> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="images/demo.jpg" width="40%">
+                    </div>
+                    <p style="color: #007bff; font-size: 25px; margin-top: 0;">Non-intrusive Load Monitoring (NILM)</p>
 
+                    <p class="name" style="font-size: 20px; margin-top: 50px; margin-bottom: 0;">Han Wu, Tianhang Tan, Shengyu Duan, Alex Yakovlev, Rishad Shafik and Tousif Rahman</p>
+                    <div class="r-hstack">
+                        <img src="images/istm.png" width="15%"> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="images/newcastle.png" width="15%">
+                    </div>
                     <aside class="notes">
                     </aside>
                 </section>
 
                 <section>
-                    <h3 class="r-fit-text">A TM-based NILM System</span> on MCUs</h3>
+                    <h3 class="">A TM-based NILM System on MCUs</h3>
                 </section>
 
                 <section>
-                    <h2>Experimental Results</h2>
-                    <div class="r-vstack">
-                        <p><a href="https://istm.wuhanstudio.uk/">https://istm.wuhanstudio.uk</a></p>
+                    <h3>Experimental Results</h3>
+                    <div class="r-hstack">
+                        <table style="font-size: 25px;">
+                            <thead>
+                                <tr>
+                                <th>Appliance</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Fridge</td>
+                                <td>0.99</td>
+                                <td>0.97</td>
+                                </tr>
+                                <tr>
+                                <td>Microwave</td>
+                                <td>0.80</td>
+                                <td>0.95</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <img src="images/scatter.png" width="45%"> &nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
-                    <p style="font-size: 22px;"><i class="fab fa-github"></i> &nbsp; <a href="https://github.com/wuhanstudio/nilm">Source Code</a></p>
+
+                    <div class="r-hstack">
+
+                        <table style="margin-top: 10px; margin-right: 40px; font-size: 22px;">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Fridge (F1)</th>
+                                    <th>Microwave (F1)</th>
+                                    <th>Model Size</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Our Method</strong></td>
+                                    <td><strong>0.89</strong></td>
+                                    <td><strong>0.84</strong></td>
+                                    <td><strong>17 KB</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>LSTM</td>
+                                    <td>0.92</td>
+                                    <td>0.38</td>
+                                    <td>1.9 MB</td>
+                                </tr>
+                                <tr>
+                                    <td>BERT</td>
+                                    <td>0.76</td>
+                                    <td>0.48</td>
+                                    <td>8.4 MB</td>
+                                </tr>
+                                <tr>
+                                    <td>EdgeNILM</td>
+                                    <td>0.74</td>
+                                    <td>-</td>
+                                    <td>41.5 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table style="font-size: 22px; margin-top: 10px;">
+                            <thead>
+                                <tr>
+                                    <th>Appliance</th>
+                                    <th>Precision</th>
+                                    <th>Recall</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fridge</td>
+                                    <td>0.84</td>
+                                    <td>0.94</td>
+                                </tr>
+                                <tr>
+                                    <td>Microwave</td>
+                                    <td>0.75</td>
+                                    <td>0.95</td>
+                                </tr>
+                                <tr>
+                                    <td>Dish Washer</td>
+                                    <td>0.10</td>
+                                    <td>0.08</td>
+                                </tr>
+                                <tr>
+                                    <td>Electric Furnace</td>
+                                    <td>0.50</td>
+                                    <td>0.15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="r-vstack">
+                        <p style="font-size: 25px;"> <i class="fab fa-github"></i> GitHub &nbsp; <a href="https://github.com/wuhanstudio/nilm">https://github.com/wuhanstudio/nilm</a></p>
+                    </div>
+
                 </section>
 
             </div>
